@@ -1,0 +1,14 @@
+# gitignore
+.gitignore
+
+# Pycharm
+.idea
+
+# Virtual Environment
+venv_project_name  # Change to the name of the project directory
+
+# Project
+data  # include if the data folder is too large for GitHub
+results 
+paper 
+

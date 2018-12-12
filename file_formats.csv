@@ -1,0 +1,11 @@
+,,,,,,,,
+Name, CSV/TSV, XML, JSON, SequenceFile, Avro, RCFile, Parquet, ORC
+File Type, Text, Text, Text, Binary, Binary, Binary, Binary, ?
+Row-based/Column-based,N/A, N/A, N/A, row-based, row-based, column-based, column-based, ?
+Space Efficiency, bad, bad, bad, moderate, moderate, good, good, ?
+Speed, good, bad, moderate, good, good (with codegen), moderate, ?, ?
+Data Types, only strings, any, common types, any (with serialization and deserialization code), common types +, byte strings, ?, ?
+Splittability, splittable (with header removed), splittable (with header removed)?, splittable (with jsonlines format), splittable, splittable, splittable, ?, ?
+Extensibility, not extensible, extensible, extensible, not extensible, extensible, not extensible, ?, ?
+Notes, hard to reorder fields, None, common for web applications, Java only, works across multiple languages, avoids reading columns not used later, most sophisticated columnar format in hadoop, 
+Links,docs.python.org/2/library/csv.html,w3schools.com/xml/,docs.python.org/2/library/json.html,wiki.apache.org/hadoop/SequenceFile,avro.apache.org, web.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-11-4.pdf, parquet.apache.org,orc.apache.org
